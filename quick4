@@ -1,0 +1,56 @@
+dnsnames.txt
+  facebook
+  amazon
+  netflix
+  google
+
+###
+for i in $(cat dnsnames.txt); do nslookup "$i.com"; done
+###
+
+$ for i in $(cat dnsnames.txt); do nslookup "$i.com"; done
+Server:		192.168.50.1
+Address:	192.168.50.1#53
+
+Non-authoritative answer:
+Name:	facebook.com
+Address: 31.13.66.35
+
+Server:		192.168.50.1
+Address:	192.168.50.1#53
+
+Non-authoritative answer:
+Name:	amazon.com
+Address: 205.251.242.103
+Name:	amazon.com
+Address: 176.32.103.205
+Name:	amazon.com
+Address: 54.239.28.85
+
+Server:		192.168.50.1
+Address:	192.168.50.1#53
+
+Non-authoritative answer:
+Name:	netflix.com
+Address: 52.3.144.142
+Name:	netflix.com
+Address: 54.237.226.164
+Name:	netflix.com
+Address: 3.230.129.93
+
+Server:		192.168.50.1
+Address:	192.168.50.1#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 172.253.63.101
+Name:	google.com
+Address: 172.253.63.100
+Name:	google.com
+Address: 172.253.63.139
+Name:	google.com
+Address: 172.253.63.102
+Name:	google.com
+Address: 172.253.63.138
+Name:	google.com
+Address: 172.253.63.113
